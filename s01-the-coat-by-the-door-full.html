@@ -63,7 +63,8 @@
   .tool summary { cursor:pointer; list-style:none; padding:7px 12px; background:#f3eedb; border-left:2px solid var(--sun-deep); border-radius:4px; }
   .tool summary::-webkit-details-marker { display:none; }
   .tool summary:hover { background:#efe6c8; }
-  .tool .tool-body { margin-top:4px; padding:10px 12px; background:#fbf9f1; border:1px solid var(--rule); border-radius:4px; white-space:pre-wrap; max-height:420px; overflow:auto; font-size:11.5px; line-height:1.55; color:#55503f; }
+  .tool .tool-body { margin-top:4px; padding:10px 12px; background:#fbf9f1; border:1px solid var(--rule); border-radius:4px; white-space:pre-wrap; overflow-wrap:anywhere; word-break:break-word; max-height:420px; overflow:auto; font-size:11.5px; line-height:1.55; color:#55503f; }
+  .tool summary { overflow-wrap:anywhere; }
   .tool .tool-body .src { display:block; color:var(--sun-deep); margin:8px 0 2px; font-weight:600; }
   .file-chip { display:inline-block; font-size:11.5px; background:#fff; border:1px solid var(--rule); border-radius:6px; padding:4px 10px; margin:0 0 6px; color:var(--ink-soft); }
   .msg-oona .file-chip { background:#f6ecc8; }
@@ -3267,7 +3268,7 @@ The Co-Conspiracy Plan · The Light Is On
 
 Bugs and issues I noticed:
 
-<strong>Link bug:</strong> The &quot;← Syntax Field Archive&quot; back link at the top points to <code><a href='https://cyan-lina-4.tiiny.site/' target='_blank' rel='noopener'>https://cyan-lina-4.tiiny.site/</a></code> — that&#x27;s the old tiiny.site URL from before the migration to GitHub Pages. Should be <code><a href='https://dontcallmekelly.github.io/syntax-field-archive/' target='_blank' rel='noopener'>https://dontcallmekelly.github.io/syntax-field-archive/</a></code>
+<strong>Link bug:</strong> The &quot;← Syntax Field Archive&quot; back link at the top points to <code>https://cyan-lina-4.tiiny.site/</code> — that&#x27;s the old tiiny.site URL from before the migration to GitHub Pages. Should be <code><a href='https://dontcallmekelly.github.io/syntax-field-archive/' target='_blank' rel='noopener'>https://dontcallmekelly.github.io/syntax-field-archive/</a></code>
 
 <strong>Same bug at bottom:</strong> The &quot;Archive Home&quot; link also probably points to the old URL (the markdown shows the correct one but I want to flag it to double-check in the actual HTML source).
 
